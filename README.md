@@ -8,11 +8,18 @@ contains a sample access_token_secret and Refresh_token_secret
 Making it easier to understand and code,
 authServer.js contains the api's:
 
-    login:- creats a jwt token and makes it available according to the username, in refreshToken variable, ideally this variable needs to be a localStorage/sessionStorage
+#
+/login:- 
+        
+        creats a jwt token and makes it available according to the username, in refreshToken variable, ideally this variable needs to be a localStorage/sessionStorage
 
-    token:-the new token is generated according to the available refreshToken, the token api generates new accesstoken with the expiry time.
+/token:-
 
-    logout:- The access token is deleted or killed to restrict the further use of tokens.
+    the new token is generated according to the available refreshToken, the token api generates new accesstoken with the expiry time.
+
+/logout:- 
+
+    The access token is deleted or killed to restrict the further use of tokens.
 
 generating Access Token:-
 
@@ -24,10 +31,14 @@ generating Access Token:-
         }
 
 
-server.js:-
-    application api for other uses
+# server.js:-
 
-        /post- validates the token code , after tat accoding to the username the relevent data is returned.
+application api for other uses
+
+/post- 
+
+    validates the token code , 
+    after tat accoding to the username the relevent data is returned.
     
 authenticateToken:-
 
